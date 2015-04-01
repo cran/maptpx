@@ -1,7 +1,6 @@
 Package: maptpx
-Title: MAP estimation of topic models
-Version: 1.9-1
-Date: 2013
+Title: MAP Estimation of Topic Models
+Version: 1.9-2
 Author: Matt Taddy <taddy@chicagobooth.edu>
 Depends: R (>= 2.10), slam
 Suggests: MASS
@@ -10,7 +9,7 @@ Description: Posterior maximization for topic models (LDA) in text analysis,
 Maintainer: Matt Taddy <taddy@chicagobooth.edu>
 License: GPL-3
 URL: http://faculty.chicagobooth.edu/matt.taddy/index.html
-Packaged: 2013-12-01 15:44:08 UTC; mtaddy
 NeedsCompilation: yes
+Packaged: 2015-04-01 17:48:28 UTC; taddy
 Repository: CRAN
-Date/Publication: 2013-12-01 18:52:29
+Date/Publication: 2015-04-02 00:15:42
