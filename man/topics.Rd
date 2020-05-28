@@ -20,7 +20,7 @@ topics(counts, K, shape=NULL, initopics=NULL,
   \item{initopics}{ Optional start-location for \eqn{[\theta_1 ... \theta_K]}, the topic-phrase probabilities.  
   		    Dimensions must accord with the smallest element of \code{K}.  
   		    If \code{NULL}, the initial estimates are built by incrementally adding topics. }
-  \item{tol}{ Convergence tolerance: optimization stops, conditional on some extra checks, when the \emph{relative} posterior increase over a full paramater set update is less than \code{tol}.}
+  \item{tol}{ Convergence tolerance: optimization stops, conditional on some extra checks, when the \emph{absolute} posterior increase over a full paramater set update is less than \code{tol}.}
   \item{bf}{An indicator for whether or not to calculate the Bayes factor for univariate \code{K}.  
   If \code{length(K)>1}, this is ignored and Bayes factors are always calculated. }
   \item{kill}{For choosing from multiple \code{K} numbers of topics (evaluated in increasing order),
@@ -62,13 +62,12 @@ Taddy (2012), \emph{On Estimation and Selection for Topic Models}.
 \url{http://arxiv.org/abs/1109.4518}
 }
 \author{
-  Matt Taddy \email{taddy@chicagobooth.edu}
+  Matt Taddy \email{mataddy@gmail.com}
 }
 \seealso{
   plot.topics, summary.topics, predict.topics, wsjibm, congress109, we8there
 }
 \examples{
-## see also http://faculty.chicagobooth.edu/matt.taddy/teaching/we8there.R
 
 ## Simulation Parameters
 K <- 10
